@@ -1,0 +1,86 @@
+div.header{
+	font-family: Work Sans,sans-serif,light;
+	text-align: center;
+	padding-top: 32px;
+	font-size: 50px;
+	margin-right: auto;
+	margin-left: auto;
+} 
+
+div.main{
+	position: relative;
+	width: 1140px;
+	height: 422px;
+	padding-top: 115px;
+	margin :auto;
+}
+div.button1{
+
+	display: inline-block;
+	width: 68px;
+	margin-top: 154px;
+	position: absolute;
+
+}
+div.button2{
+	position: absolute;
+	display: inline-block;
+	width: 68px;
+	left: 1074px;
+	margin-left: 62px;
+	margin-top: 154px;
+	
+}
+div.man{
+	display: inline-block;
+	height: 422px; 
+
+}
+span.developer_name{
+	font-weight: bold;
+	font-size: 22px;
+}
+span.name{
+	display: inline-block;
+	padding-bottom: 2px;
+	position: absolute;
+	top: -5px;
+	margin-left: 7px;
+
+}
+ span.main_text{
+ 	width: 513px;
+	display: block;
+	padding-top: 50px;
+}
+div.text{
+	display: inline-block;
+	position: absolute ;
+	padding-top: 63px;
+	margin-left: 44px;
+	font-family: Work Sans,sans-serif;
+}
+
+div.text2{
+	position: relative;	
+}
+
+div.FrontEnd{
+	color: #e8f4fc;
+	font-size: 86px;
+	font-weight: 900;
+}
+
+div.all{
+	text-align: center;
+	margin: 0 auto;
+}
+
+div.box{
+	display: inline-block;
+	position: absolute;
+	width: 1008px;
+	left: 68px;
+	margin-left: 172px;
+	margin-right: 62px;
+}

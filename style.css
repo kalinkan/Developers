@@ -6,37 +6,63 @@ div.header{
 	margin-right: auto;
 	margin-left: auto;
 } 
-
-div.main{
-	position: relative;
-	width: 1140px;
-	height: 422px;
-	padding-top: 115px;
-	margin :auto;
+body{
+	position:relative;
 }
-div.button1{
 
+.slides_container {
+	overflow:hidden;
+	position:relative;
+}
+#container{
+	position: relative;
+	width: 1155px;
+	height: 440px;
+	padding-top: 115px;
+	margin :0 auto;
+	z-index:0;
+	overflow: hidden;
+}
+.prev{
 	display: inline-block;
 	width: 68px;
 	margin-top: 154px;
 	position: absolute;
+	z-index: 2;
 
 }
-div.button2{
+.next{
 	position: absolute;
 	display: inline-block;
 	width: 68px;
 	left: 1074px;
 	margin-left: 62px;
 	margin-top: 154px;
+	z-index: 2; 
 	
 }
+
+/*.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(./img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}*/
+
 div.man{
 	display: inline-block;
 	height: 422px; 
-
 }
-span.developer_name{
+
+.developer_name{
 	font-weight: bold;
 	font-size: 22px;
 }
@@ -52,35 +78,48 @@ span.name{
  	width: 513px;
 	display: block;
 	padding-top: 50px;
+	position: relative;
 }
 div.text{
+	font-size: 18px;
 	display: inline-block;
-	position: absolute ;
-	padding-top: 63px;
+	position: absolute;
+	padding-top: 67px;
 	margin-left: 44px;
 	font-family: Work Sans,sans-serif;
 }
+.developer_name2{
+	position: absolute;
+	padding-top: 30px;
+}
 
-div.text2{
+div.text2, span.main_text{
+	font-size: 17px;
 	position: relative;	
 }
 
 div.FrontEnd{
+	position: relative;
+	bottom: 0;
+	left: 0;
 	color: #e8f4fc;
-	font-size: 86px;
-	font-weight: 900;
+	font-size: 60px;
+	font-weight: bold;
 }
 
 div.all{
 	text-align: center;
 	margin: 0 auto;
 }
+#slides{
+	z-index: 1;
+}
 
-div.box{
+div.slides_container{
 	display: inline-block;
 	position: absolute;
 	width: 1008px;
-	left: 68px;
-	margin-left: 172px;
+/*	left: 68px;*/
+	margin-left: 200px;
 	margin-right: 62px;
 }

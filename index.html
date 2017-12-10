@@ -9,20 +9,53 @@
 		    font-family: Work Sans; /* Имя шрифта */
 		    src: url(./WorkSans-Light.otf); 
 		}
-			#right { text-align: right; }
+			#right { 
+				text-align: right;
+			 }
 		</style>
+		<script src="js/jquery-1.4.4.min.js"></script>
+		<script src="js/slides.min.jquery.js"></script>
+		<script>
+			$(function(){
+				$('#slides').slides({
+					// preload: true,
+					// preloadImage: 'img/loading.gif',
+					// play: 5000,
+					// pause: 2500,
+					// hoverPause: true,
+					// animationStart: function(){
+					// 	$('.caption').animate({
+					// 		bottom:-35
+					// 	},100);
+					// },
+					animationComplete: function(current){
+						$('.caption').animate({
+							bottom:0
+						},200);
+						if (window.console && console.log) {
+							// example return of current slide number
+							console.log(current);
+						};
+					}
+				});
+			});
+	</script>
 	</head>
-	<body style="background-color:#f8f8f8;">>
+	<body style="background-color:#f8f8f8;">
 		<div class="header">
-			Our Developers 		
+			Our Developers 
 		</div>
-		<div class="main">
-			<div class="button1"><input type="image" src="img/back.png" alt="back" /></div>
-					<div class="box">
-						<div class="man">
-							<img src="img/man.png" alt="man"> <br>
-						</div>
-						<div class="text">
+
+	<div id="container">
+					<div id="slides">
+						<a href="#" class="prev"> <img src="img/back.png" alt="back"/> </a>
+						<a href="#" class="next"> <img src="img/next.png" alt="next" ></a>
+						<div class="slides_container">
+							<div>
+							<div class="man">
+								<img src="img/man.png" alt="man"> <br>
+							</div>
+							<div class="text">
 							<div class="text2">
 								<div>
 									<img src="img/stripe.png" alt="stripe">
@@ -30,13 +63,102 @@
 									<span class="developer_name">ANDREW</span><br>Front End Developer
 								</div> 
 						<span class="main_text">
-							« It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. »
+							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Th
 						</span>
-							</div>
-							 <div id="right"><div class="FrontEnd">FRONT <br> END</div></div>
-						</div>							
-					</div>
-			<div class="button2"><input type="image" src="img/next.png" alt="next" /></div>
-		</div>
+						</div> <!-- закрытие text2 -->
+						<div id="right"><div class="FrontEnd">FRONT <br> END </div> </div>
+						</div> <!-- закрытие text -->
+							<div id="right"><div class="FrontEnd">FRONT <br> END </div> </div>
+							</div>  <!-- закрытие slides_1 -->
+
+
+							<div class="man2">
+									<div class="man2_image"><img src="img/man2.png" align="left" alt="man" width=250 px> <br> </div>
+							<div class="text">
+							<div class="text2">
+								<div>
+									<img src="img/stripe.png" alt="stripe">
+									<span class="name">
+									<span class="developer_name">LEO</span><br>JAVA Developer
+								</div> 
+						<span class="main_text">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						</span>
+						</div>
+						<div id="right"><div class="FrontEnd"> JAVA <br> DEVELOPER </div>
+								  <!-- закрытие text2 -->
+						</div> <!-- закрытие text -->
+								 </div>
+							</div>  <!-- закрытие slides_1 -->
+
+
+							<div class="man3">
+									<div class="man3_image"><img src="img/man3.png" align="left" alt="man" width=250 px> <br> </div>
+							<div class="text">
+							<div class="text2">
+								<div>
+									<img src="img/stripe.png" alt="stripe">
+									<span class="name">
+									<span class="developer_name">MARK</span><br>C++ Developer
+								</div> 
+						<span class="main_text">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						</span>
+						</div>
+						<div id="right"><div class="FrontEnd"> C++ <br> DEVELOPER </div>
+								  <!-- закрытие text2 -->
+						</div> <!-- закрытие text -->
+								 </div>
+							</div>  <!-- закрытие slides_1 -->
+
+
+							<div class="man4">
+									<div class="man4_image"><img src="img/women4.png" align="left" alt="man" width=270 px> <br> </div>
+							<div class="text">
+							<div class="text2">
+								<div>
+									<img src="img/stripe.png" alt="stripe">
+									<span class="name">
+									<span class="developer_name">KATE</span><br> PROJECT MANAGER
+								</div> 
+						<span class="main_text">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						</span>
+						</div>
+						<div id="right"><div class="FrontEnd"> PROJECT <br> MANAGER </div>
+								  <!-- закрытие text2 -->
+						</div> <!-- закрытие text -->
+								 </div>
+							</div>  <!-- закрытие slides_1 -->
+
+
+							<div class="man5">
+									<div class="man5_image"><img src="img/man5.png" align="left" alt="man" width=270 px> <br> </div>
+							<div class="text">
+							<div class="text2">
+								<div>
+									<img src="img/stripe.png" alt="stripe">
+									<span class="name">
+									<span class="developer_name">ANDY</span><br> SALAES MANAGER
+								</div> 
+						<span class="main_text">
+						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+						</span>
+						</div>
+						<div id="right"><div class="FrontEnd"> SALES <br> MANAGER </div>
+								  <!-- закрытие text2 -->
+						</div> <!-- закрытие text -->
+								 </div>
+							</div>  <!-- закрытие slides_1 -->
+
+					</div> <!-- закрытиеslides_container -->
+		</div> <!-- закрытие container -->
+				<!-- <div>	
+			<ul class="pagination">
+					<li class="current"><a href="#1"> 1 </a></li>
+					<li > <a href="#2"> 2 </a></li>
+					<li > <a href="#3"> 3 </a>></li>
+				</ul>
+			</div> -->
 	</body>
 </html>

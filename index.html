@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./style.css">
-		<title>web site nastya</title>
+		<title>Our Developers</title>
 		<style type="text/css"> 
 		@font-face {
 		    font-family: Work Sans; /* Имя шрифта */
@@ -36,6 +36,8 @@
 							// example return of current slide number
 							console.log(current);
 						};
+
+						document.getElementById('FrontEnd').innerHTML = $('.FrontEnd')[current - 1].innerHTML;
 					}
 				});
 			});
@@ -47,28 +49,29 @@
 		</div>
 
 	<div id="container">
+		<div id="FrontEnd">FRONT <br> END </div> 
 					<div id="slides">
 						<a href="#" class="prev"> <img src="img/back.png" alt="back"/> </a>
 						<a href="#" class="next"> <img src="img/next.png" alt="next" ></a>
 						<div class="slides_container">
 							<div>
-							<div class="man">
-								<img src="img/man.png" alt="man"> <br>
-							</div>
-							<div class="text">
-							<div class="text2">
-								<div>
-									<img src="img/stripe.png" alt="stripe">
-									<span class="name">
-									<span class="developer_name">ANDREW</span><br>Front End Developer
-								</div> 
-						<span class="main_text">
-							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Th
-						</span>
-						</div> <!-- закрытие text2 -->
-						<div id="right"><div class="FrontEnd">FRONT <br> END </div> </div>
-						</div> <!-- закрытие text -->
-							<div id="right"><div class="FrontEnd">FRONT <br> END </div> </div>
+									<div class="man">
+										<img src="img/man.png" alt="man"> <br>
+									</div>
+									<div class="text">
+									<div class="text2">
+										<div>
+											<img src="img/stripe.png" alt="stripe">
+											<span class="name">
+											<span class="developer_name">ANDREW</span><br>Front End Developer
+										</div> 
+								<span class="main_text">
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Th
+								</span>
+								</div> <!-- закрытие text2 -->
+								
+								</div> <!-- закрытие text -->
+									<div class="FrontEnd">FRONT <br> END </div> 
 							</div>  <!-- закрытие slides_1 -->
 
 
